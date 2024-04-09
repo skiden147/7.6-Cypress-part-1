@@ -1,0 +1,19 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:notebook:headless": "npx cypress run --browser chrome --headless -C cypress.config.js",
+    "cy:notebook:headed": "npx cypress run --browser edge --headed -C cypress.config.js",
+    "cy:mobile:headless": "npx cypress run --browser chrome --headless -C cypressmobile.env.js",
+    "cy:mobile:headed": "npx cypress run --browser edge --headed -C cypressmobile.env.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.7.2"
+  }
+}
